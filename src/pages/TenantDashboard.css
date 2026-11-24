@@ -1,0 +1,213 @@
+
+.tenant-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+/* Welcome Section */
+.tenant-welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+    background: #173F35;
+    color: #ffffff;
+    border-radius: 18px;
+    margin-bottom: 35px;
+}
+
+.dashboard-label {
+    color: #E9B96E;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.tenant-welcome h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.tenant-welcome p:not(.dashboard-label) {
+    color: #e4e9e5;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.dashboard-primary-btn {
+    display: inline-block;
+    padding: 14px 22px;
+    background: #E9B96E;
+    color: #173F35;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.dashboard-primary-btn:hover {
+    background: #d9a957;
+    transform: translateY(-2px);
+}
+
+/* Dashboard Cards */
+.tenant-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.tenant-dashboard-card {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #E5E5E0;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.tenant-dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(23, 63, 53, 0.08);
+}
+
+.tenant-dashboard-card h3 {
+    color: #173F35;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.tenant-dashboard-card p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.tenant-dashboard-card a {
+    color: #173F35;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tenant-dashboard-card a:hover {
+    color: #c18d3e;
+}
+
+.coming-soon {
+    display: inline-block;
+    color: #8a682e;
+    background: #fbf1df;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tenant-dashboard {
+        padding: 30px 18px;
+    }
+
+    .tenant-welcome {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px;
+    }
+
+    .tenant-welcome h1 {
+        font-size: 25px;
+    }
+
+    .tenant-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Tenant Visit Requests Section */
+.tenant-visit-section {
+    margin-top: 40px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #E5E5E0;
+    border-radius: 14px;
+}
+
+.tenant-visit-section h2 {
+    color: #173F35;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.tenant-visit-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tenant-visit-card {
+    padding: 22px;
+    background: #fafaf8;
+    border: 1px solid #E5E5E0;
+    border-radius: 12px;
+}
+
+.tenant-visit-card h3 {
+    color: #173F35;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.tenant-visit-card p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.tenant-visit-card strong {
+    color: #333333;
+}
+
+.visit-status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.visit-status.pending {
+    color: #946200;
+    background: #fff1c7;
+}
+
+.visit-status.approved {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.visit-status.rejected {
+    color: #b91c1c;
+    background: #fee2e2;
+}
+
+/* Visit Requests Responsive Design */
+@media (max-width: 768px) {
+    .tenant-visit-section {
+        padding: 22px;
+    }
+
+    .tenant-visit-section h2 {
+        font-size: 21px;
+    }
+
+    .tenant-visit-list {
+        grid-template-columns: 1fr;
+    }
+}

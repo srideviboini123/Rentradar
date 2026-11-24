@@ -1,0 +1,180 @@
+
+.my-listings-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 25px;
+    min-height: 500px;
+}
+
+/* Header */
+.my-listings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.my-listings-header span {
+    color: #b18b45;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.my-listings-header h1 {
+    color: #173f35;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.my-listings-header p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* Add Listing Button */
+.add-listing-button {
+    display: inline-block;
+    background: #173f35;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.add-listing-button:hover {
+    background: #245b4b;
+}
+
+/* Listings Count */
+.my-listings-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.my-listings-count h2 {
+    color: #173f35;
+    font-size: 23px;
+}
+
+.my-listings-count span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Property Grid */
+.my-listings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Loading and Error */
+.my-listings-message,
+.my-listings-error {
+    text-align: center;
+    padding: 35px;
+    color: #666;
+}
+
+.my-listings-error {
+    color: #c62828;
+}
+
+/* Empty State */
+.my-listings-empty {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e7e5dc;
+    border-radius: 12px;
+    padding: 60px 20px;
+    margin-top: 25px;
+}
+
+.my-listings-empty h2 {
+    color: #173f35;
+    margin-bottom: 12px;
+}
+
+.my-listings-empty p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .my-listings-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .my-listings-page {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .my-listings-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .my-listings-header h1 {
+        font-size: 28px;
+    }
+
+    .my-listings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .my-listings-count h2 {
+        font-size: 20px;
+    }
+}
+
+.owner-listing-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.edit-property-button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.edit-property-button:hover {
+    background: #1d4ed8;
+}
+.delete-property-button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delete-property-button:hover {
+    background: #b91c1c;
+}

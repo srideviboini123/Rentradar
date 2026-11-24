@@ -1,0 +1,373 @@
+
+/* Main Page */
+.property-details-page {
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+/* Property Image */
+.details-image-section {
+    width: 100%;
+    max-width: 950px;
+    height: 320px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.details-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* Main Container */
+.details-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.details-main {
+    background: #FFFFFF;
+    padding: 30px;
+    border: 1px solid #E5E5E0;
+    border-radius: 14px;
+}
+
+/* Property Type */
+.details-type {
+    display: inline-block;
+    background: #EAF1ED;
+    color: #173F35;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.details-main h1 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 29px;
+    color: #173F35;
+}
+
+.details-location {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* Monthly Rent */
+.details-rent {
+    color: #173F35;
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+
+.details-rent span {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.details-main hr {
+    border: none;
+    border-top: 1px solid #E5E5E0;
+    margin: 25px 0;
+}
+
+.details-main h2 {
+    color: #26352F;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* Property Features */
+.details-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.details-features div {
+    background: #F8F7F2;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.details-features strong {
+    display: block;
+    color: #173F35;
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.details-features span {
+    color: #777777;
+    font-size: 13px;
+}
+
+/* Description */
+.details-description {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Property Information */
+.details-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.details-information p {
+    background: #F8F7F2;
+    padding: 15px;
+    border-radius: 8px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.details-information strong {
+    display: block;
+    color: #173F35;
+    margin-bottom: 7px;
+}
+
+/* Amenities */
+.details-amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.details-amenities span {
+    background: #EAF1ED;
+    color: #173F35;
+    padding: 10px 16px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Back Button */
+.back-properties-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 22px;
+    background: #173F35;
+    color: #FFFFFF;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.back-properties-button:hover {
+    background: #245B4C;
+}
+
+/* Demo Notice */
+.demo-notice {
+    margin-top: 22px;
+    color: #888888;
+    font-size: 12px;
+}
+
+/* Loading and Error */
+.details-message {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    padding: 30px;
+}
+
+.details-message a {
+    color: #173F35;
+    font-weight: 600;
+}
+
+/* Save Property Button */
+.save-property-button {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-bottom: 22px;
+    background: #EAF1ED;
+    color: #173F35;
+    border: 1px solid #173F35;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.save-property-button:hover {
+    background: #173F35;
+    color: #FFFFFF;
+}
+
+/* Compare Button */
+.compare-property-button {
+    display: inline-block;
+    padding: 12px 22px;
+    margin: 0 0 22px 10px;
+    background: #FFFFFF;
+    color: #173F35;
+    border: 1px solid #173F35;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.compare-property-button:hover {
+    background: #173F35;
+    color: #FFFFFF;
+}
+
+.compare-feedback {
+    margin-bottom: 20px;
+    color: #173F35;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details-image-section {
+        height: 280px;
+        margin: 20px auto;
+    }
+
+    .details-main {
+        padding: 22px;
+    }
+
+    .details-main h1 {
+        font-size: 25px;
+    }
+
+    .details-features {
+        gap: 10px;
+    }
+
+    .details-information {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-image-section {
+        height: 220px;
+    }
+
+    .details-main {
+        padding: 18px;
+    }
+
+    .details-main h1 {
+        font-size: 22px;
+    }
+
+    .details-rent {
+        font-size: 24px;
+    }
+
+    .details-features {
+        grid-template-columns: 1fr;
+    }
+
+    .compare-property-button {
+        margin-left: 0;
+    }
+}
+
+/* Compact Property Details Layout */
+.details-image-section {
+    max-width: 800px;
+    height: 250px;
+    margin: 25px auto;
+}
+
+.details-container {
+    max-width: 800px;
+}
+
+.details-main {
+    padding: 24px;
+}
+
+@media (max-width: 768px) {
+    .details-image-section {
+        height: 230px;
+    }
+
+    .details-main {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-image-section {
+        height: 190px;
+    }
+}
+
+/* Contact Owner Inquiry Form */
+.inquiry-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.inquiry-form textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.inquiry-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.inquiry-form button {
+    padding: 13px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inquiry-form button:hover {
+    background: #1d4ed8;
+}
+
+.inquiry-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.inquiry-feedback {
+    font-weight: 500;
+}

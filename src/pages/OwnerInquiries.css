@@ -1,0 +1,135 @@
+
+.owner-inquiries-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    min-height: 70vh;
+}
+
+.owner-inquiries-header {
+    margin-bottom: 35px;
+}
+
+.owner-inquiries-header .dashboard-label {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.owner-inquiries-header h1 {
+    font-size: 32px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.owner-inquiries-header p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.owner-inquiries-section {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.owner-inquiries-section h2 {
+    color: #1e293b;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.inquiry-count {
+    color: #64748b;
+    margin-bottom: 22px;
+}
+
+.owner-inquiry-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 18px;
+    background: #ffffff;
+}
+
+.inquiry-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.inquiry-card-header h3 {
+    color: #1e293b;
+    font-size: 19px;
+}
+
+.inquiry-status {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.owner-inquiry-card p {
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.owner-inquiry-card strong {
+    color: #1e293b;
+}
+
+.inquiry-message {
+    background: #f8fafc;
+    border-left: 3px solid #2563eb;
+    padding: 14px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+.no-inquiries {
+    text-align: center;
+    padding: 45px 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.no-inquiries h3 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.no-inquiries p {
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .owner-inquiries-page {
+        padding: 25px 15px;
+    }
+
+    .owner-inquiries-section {
+        padding: 18px;
+    }
+
+    .owner-inquiries-header h1 {
+        font-size: 26px;
+    }
+
+    .inquiry-card-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .owner-inquiry-card {
+        padding: 16px;
+    }
+}
